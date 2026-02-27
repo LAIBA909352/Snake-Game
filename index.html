@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snakes and Ladders</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="board-container">
+    
+    <div class="board">
+       <div class="purple">100</div>
+      <div class="gray">99</div>
+      <div class="purple">98</div>
+      <div class="gray">97</div>
+      <div class="purple">96</div>
+      <div class="gray">95</div>
+      <div class="purple">94</div>
+      <div class="gray">93</div>
+      <div class="purple">92</div>
+      <div class="gray">91</div>
+    
+      <div class="gray">81</div>
+      <div class="purple">82</div>
+      <div class="gray">83</div>
+      <div class="purple">84</div>
+      <div class="gray">85</div>
+      <div class="purple">86</div>
+      <div class="gray">87</div>
+      <div class="purple">88</div>
+      <div class="gray">89</div>
+      <div class="purple">90</div>
+    
+      <div class="purple">80</div>
+      <div class="gray">79</div>
+      <div class="purple">78</div>
+      <div class="gray">77</div>
+      <div class="purple">76</div>
+      <div class="gray">75</div>
+      <div class="purple">74</div>
+      <div class="gray">73</div>
+      <div class="purple">72</div>
+      <div class="gray">71</div>
+      
+      <div class="gray">61</div>
+      <div class="purple">62</div>
+      <div class="gray">63</div>
+      <div class="purple">64</div>
+      <div class="gray">65</div>
+      <div class="purple">66</div>
+      <div class="gray">67</div>
+      <div class="purple">68</div>
+      <div class="gray">69</div>
+      <div class="purple">70</div>
+      
+      <div class="purple">60</div>
+      <div class="gray">59</div>
+      <div class="purple">58</div>
+      <div class="gray">57</div>
+      <div class="purple">56</div>
+      <div class="gray">55</div>
+      <div class="purple">54</div>
+      <div class="gray">53</div>
+      <div class="purple">52</div>
+      <div class="gray">51</div>
+      
+      <div class="gray">41</div>
+      <div class="purple">42</div>
+      <div class="gray">43</div>
+      <div class="purple">44</div>
+      <div class="gray">45</div>
+      <div class="purple">46</div>
+      <div class="gray">47</div>
+      <div class="purple">48</div>
+      <div class="gray">49</div>
+      <div class="purple">50</div>
+      
+      <div class="purple">40</div>
+      <div class="gray">39</div>
+      <div class="purple">38</div>
+      <div class="gray">37</div>
+      <div class="purple">36</div>
+      <div class="gray">35</div>
+      <div class="purple">34</div>
+      <div class="gray">33</div>
+      <div class="purple">32</div>
+      <div class="gray">31</div>
+      
+      <div class="gray">21</div>
+      <div class="purple">22</div>
+      <div class="gray">23</div>
+      <div class="purple">24</div>
+      <div class="gray">25</div>
+      <div class="purple">26</div>
+      <div class="gray">27</div>
+      <div class="purple">28</div>
+      <div class="gray">29</div>
+      <div class="purple">30</div>
+      
+      <div class="purple">20</div>
+      <div class="gray">19</div>
+      <div class="purple">18</div>
+      <div class="gray">17</div>
+      <div class="purple">16</div>
+      <div class="gray">15</div>
+      <div class="purple">14</div>
+      <div class="gray">13</div>
+      <div class="purple">12</div>
+      <div class="gray">11</div>
+      
+      <div class="gray">1</div>
+      <div class="purple">2</div>
+      <div class="gray">3</div>
+      <div class="purple">4</div>
+      <div class="gray">5</div>
+      <div class="purple">6</div>
+      <div class="gray">7</div>
+      <div class="purple">8</div>
+      <div class="gray">9</div>
+      <div class="purple">10</div>
+    </div>
+
+    <svg class="overlay" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <line class="ladder-rung" x1="55" y1="95" x2="55" y2="75" />
+        <line class="ladder-rail" x1="53.5" y1="95" x2="53.5" y2="75" />
+        <line class="ladder-rail" x1="56.5" y1="95" x2="56.5" y2="75" />
+
+        <line class="ladder-rung" x1="15" y1="85" x2="25" y2="65" />
+        <line class="ladder-rail" x1="13" y1="86" x2="23" y2="66" />
+        <line class="ladder-rail" x1="17" y1="84" x2="27" y2="64" />
+
+        <line class="ladder-rung" x1="85" y1="45" x2="95" y2="25" />
+        <line class="ladder-rail" x1="83" y1="46" x2="93" y2="26" />
+        <line class="ladder-rail" x1="87" y1="44" x2="97" y2="24" />
+
+        <line class="ladder-rung" x1="35" y1="45" x2="25" y2="15" />
+        <line class="ladder-rail" x1="33" y1="46" x2="23" y2="16" />
+        <line class="ladder-rail" x1="37" y1="44" x2="27" y2="14" />
+
+        <path class="snake-body" d="M 65 55 Q 80 65 75 80 T 85 95" />
+        <circle class="snake-head" cx="65" cy="55" r="1.8" />
+        <circle class="snake-eye" cx="64.2" cy="54.2" r="0.4" />
+
+        <path class="snake-body" d="M 15 35 Q 0 45 15 55 T 5 65" />
+        <circle class="snake-head" cx="15" cy="35" r="1.8" />
+        <circle class="snake-eye" cx="14.2" cy="34.2" r="0.4" />
+
+        <path class="snake-body" d="M 45 5 Q 60 15 45 20 T 55 25" />
+        <circle class="snake-head" cx="45" cy="5" r="1.8" />
+        <circle class="snake-eye" cx="44.2" cy="4.2" r="0.4" />
+    </svg>
+
+</div>
+
+</body>
+</html>
